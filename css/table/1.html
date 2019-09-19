@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            표와 관련된 정렬
+            - 표와 관련된 정렬에는 표 정렬, 셀 안의 내용 가로 정렬, 셀안의 내용 세로 정렬이 있음
+
+            표를 가운데 정렬할 때는 margin 속성을 사용함 margin 속성값을 auto로 하면 가운데 정렬
+
+            표를 오른쪽 정렬할때는 float 속성을 사용함
+
+            셀 안의 내용을 정렬할때는 text-align 속성을 사용함
+
+            셀 안의 내용을 세로 정렬할때는 vertical-align 속성을 사용함 
+            위쪽 정렬은 top, 가운데는 middle, 아래쪽 정렬은 bottom
+        */
+        table,
+        th,
+        td {
+            border: 1px solid #bcbcbc;
+        }
+
+        table {
+            width: 400px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            /*
+            float: right
+            */
+        }
+        th{
+            text-align: right;
+            vertical-align: bottom;
+        }
+        td{
+            text-align: center;
+            vertical-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용4</td>
+                <td>내용5</td>
+                <td>내용6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

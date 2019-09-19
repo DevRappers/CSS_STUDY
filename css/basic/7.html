@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            :empty : 내용이 없는 비어있는 요소를 선택함
+            :first-child : 형제 요소 중 첫번째 요소를 선택함
+            :hover : 요소에 마우스를 올린 상태를 선택함        
+        */
+        p:empty{
+            background-color: blue;
+        }
+        p:hover{
+            background-color: pink;
+        }
+
+        /*
+            :nth-child(), :nth-last-child()
+            - 특정 순서에 있는 요소를 선택할 때 사용하는 선택자.
+            - nth-child()는 앞에서부터 세고 nth-last-child()는 뒤에서 부터 센다.
+
+            :nth-child() : 형제 요소 중에서 특정 순서에 있는 요소를 선택할 때 사용함.
+            문법 : nth-child(an + b)
+            a와 b는 정수임. 0과 음수도 가능함
+            n에는 음이 아닌 정수, 즉 0,1,2,3... 이 차례대로 대입됨.
+            an+b대신에 even, odd를 넣을 수도 있음
+            앞에들어가는 n은 몇칸 띌대 사용 2n일경우 두칸씩 1n일경우 전부다 0일경우 그 컬럼만 해당되도록
+            뒤에 b는 어디서 시작할 건지 시작점을 잡을 때 사용함.
+        */
+        li:nth-child(3n + 2){
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        선택자 테스트 중 입니다.<br>
+    </p>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</body>
+</html>

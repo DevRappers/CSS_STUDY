@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            CSS 링크 꾸미기 
+            링크는 a태그로 만듬 -> 가상클래스를 이용하면 좀 더 다양하게 꾸밀 수 있음
+            a:link : 방문하지 않은 링크
+            a:visited : 방문했던 링크
+            a:hover:마우스가 올려진 링크
+            a:active:클링하는 순간 링크
+        */
+        a:link{
+            color:blue; 
+            /*밑줄을 제거하기 위해 사용*/
+            text-decoration: none;
+        }
+        a:visited{
+            color:purple;
+            text-decoration: none;
+        }
+        a:hover{
+            color:pink;
+            text-decoration: underline;
+        }
+        a:active{
+            color:green;
+            background-color:hotpink;
+        }
+    </style>
+</head>
+<body>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+</body>
+</html>

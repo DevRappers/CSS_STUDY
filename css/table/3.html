@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            표와 셀의 크기 정하기
+            표와 셀의 크기는 정해져 있지 않다. 내용이 짧으면 작게, 내용이 길면 크게 표와 셀이 자동으로 만들어진다.
+
+            크기를 직접 정할 때 사용하는 속성은 width 와 height 속성이 있다. 
+        */
+        table, th, td{
+            border: 1px solid green;
+            border-collapse: collapse;
+        }
+
+        table{
+            width:100%;
+            height: 200px;
+        }
+        th{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="cell">내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용4</td>
+                <td>내용5</td>
+                <td>내용6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

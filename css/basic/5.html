@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            하위 선택자는 특정 요소의 하위에 있는 요소를 선택함
+            예를 들어 div blockquote로 볼때 div요소의 하위에 있는 blockquote요소를 선택함
+        */
+        div blockquote{
+            color:red;
+        }
+        /*
+            자식 선택자는 특정 요소의 자식 요소를 선택함. 하위 선택자와 다른점은 하위 선택자는 1단계든 여러단계든
+            다 선택하지만 자식 선택자는 1단계아래만 선택함.
+        */
+        div > blockquote{
+            background-color:blue;
+        }
+        /*
+            그 외에도 자주 쓰이지는 않지만 형제선택자로 어떤 요소의 형제 요소를 선택하는 선택자로 
+            h1 ~ p으로 h1 요소의 형제 요소 중 p요소를 선택하는 방법과
+            인접 형제 선택자로 h1+p 로 어떤 요소의 형제 요소 중 첫번째 요소를 선택하는 방법이 있음
+        */
+    </style>
+</head>
+<body>
+    <div>
+        <blockquote>
+            하위 선택자 테스트입니다.
+        </blockquote>
+    </div>
+</body>
+</html>

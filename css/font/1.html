@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            font-family : 글꼴을 설정하는 속성
+            기본값 : 웹브라우저의 기본 글꼴
+            상속 : YES
+
+            font-family의 문법
+            font-family: font | initial | inherit
+            font : family-name또는 generic-family
+            initial : 기본값으로 설정
+            inherit : 부모 요소의 속성값을 상속받음
+
+            family-name은 글꼴이기 때문에 글꼴 이름에 띄어쓰기가 있으면 작은 따옴표 또는 큰따옴표로 감쌈.
+            generic-family는 글꼴 유형
+            - serif : 삐침 있는 명조계열의 글꼴
+            - sans-serif : 삐침 없고 굵기가 일정한 고딕계열의 글꼴
+            - monospace : 글자 폭과 간격이 일정한 글꼴
+            - cursive : 손으로 쓴 것 같은 필기계열의 글꼴
+            - fantasy : 화려한 글꼴
+
+            여러개의 글꼴을 설정하는 방법
+            쉼표로 구분함
+            font-family: Georgia, "Times New Roman", serif;
+            로 설정했을 때 제일 먼저 georgia를 먼저 찾음 없으면 두번째 없으면 세번째 이런식으로 진행됨.
+            설정한 글꼴이 없을 수도 있으므로 마지막은 generic-family로 해주는게 좋음 serif나 sans-serif나
+
+            영어와 한글 글꼴을 다르게 하기
+            글꼴을 여러 개 설정했을 때, 첫번째 글꼴로 표현할 수 없는 것만 다음 글꼴로 사용한다
+            따라서 한글이 없는 글꼴을 앞에두고 한글 글꼴을 뒤에 두면 한글과 영어가 다른 글꼴로 표현됨.
+        */
+
+        .a { font-family: Georgia, serif; }
+        .b { font-family: serif; }
+        .c { font-family: sans-serif; }
+        .d { font-family: monospace; }
+        .e { font-family: cursive; }
+        .f { font-family: fantasy; }
+        .g { font-family: Georgia, "맑은 고딕", serif; }
+    </style>
+</head>
+<body>
+        <p class="a">font-family: Geogia;</p>
+        <p class="b">font-family: serif;</p>
+        <p class="c">font-family: sans-serif;</p>
+        <p class="d">font-family: monospace;</p>
+        <p class="e">font-family: cursive;</p>
+        <p class="f">font-family: fantasy;</p>
+        <p class="g">한글은 맑은 고딕, 나머지는 Georgia</p>
+</body>
+</html>

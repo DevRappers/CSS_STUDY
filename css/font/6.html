@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            text-shadow : 글자에 그림자 효과를 주는 속성
+            기본값 : none, 상속 : Yes, 애니메이션 : Yes
+
+            문법
+            text-shadow: offset-x offset-y blur-radius color | none | initial | inherit
+
+            offset-x : 그림자의 수평 거리를 정합니다. (필수)
+            offset-y : 그림자의 수직 거리를 정합니다. (필수)
+            blur-radius : 흐림 정도를 정합니다. (선택 : 값을 정하지 않으면 0)
+            color : 색을 정합니다. (선택 : 값을 정하지 않으면 브라우저 기본값)
+            none : 글림자 효과를 없앱니다.
+            initial : 기본값으로 설정합니다.
+            inherit : 부모 요소의 속성값을 상속받습니다.
+        */
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:36px;
+            font-weight: bold;
+            color:#ffffff;
+            /*텍스트를 대문자로 바꿔줌 */
+            text-transform: uppercase;
+            /*글씨의 위치를 정해주기 때문에 가운데정렬*/
+            text-align: center;
+        }
+        /* 첫번째 값을 넓히면 오른쪽으로 그림자가 더생기고, 두번째값은 밑으로 그림자가 더생기고 3번째값은 흐려짐으로 주위가 넓어짐*/
+        .s1{
+            text-shadow: 5px 5px 10px red;
+            background-color: #666666;
+        }
+    </style>
+</head>
+<body>
+        <p class="s1">devrappers</p>
+</body>
+</html>

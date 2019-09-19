@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            배경색을 만드는 속성 background-color 
+        */
+        table {
+            width: 100%;
+            border-top: 1px solid greenyellow;
+            border-collapse: collapse;
+            background-color: cornflowerblue;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead tr{
+            background-color: #0d47a1;
+            color: #ffffff;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: #bbdefb;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용4</td>
+                <td>내용5</td>
+                <td>내용6</td>
+            </tr>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용4</td>
+                <td>내용5</td>
+                <td>내용6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

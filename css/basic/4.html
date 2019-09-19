@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            아이디 선택자
+            - 아이디 선택자는 특정 값을 id 속성의 값으로 갖는 요소를 선택함. 속성값 앞에 #을 붙임
+        */
+        #abc {
+            color: red;
+        }
+        /*
+            클래스 선택자
+            - 클래스 선택자는 특정 값을 class 속성의 값으로 갖는 요소를 선택함. 속성값 앞에 .을 붙임
+        */
+        .def {
+            color: blue;
+        }
+        /*
+            클래스 선택자 앞에 아무것도 없으면 그값을 갖는 모든 요소를 선택한다. 즉 .abc라면 class가 abc인
+            모든 요소를 선택하는 것.
+
+            클래스 선택자 앞에 무엇인가 있으면 앞에 tagname을 적어준다. 즉 abc클래스인 p태그만 선택하려면
+            p.abc로 선택함
+        */
+        p.def{
+            font-style:italic;
+        }
+        /*
+            클래스 속성의 값이 여러개라면 CSS에 정의된 순서대로 적용한다 예를들어 
+            <h1 class="aaa bbb"> 일경우 순서대로 내려가기 때문에 bbb에 있는 style 시트의 값이 들어가게 됨.
+        */
+        .aaa{
+            color:blue;
+        }
+        .bbb{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="abc">아이디 선택자 테스트</h1>
+
+    <h1 class="def">클래스 선택자 테스트</h1>
+
+    <p class="def">클래스 태그 선택자 테스트</p>
+
+    <p class="aaa bbb">클래스 다중 선택자 테스트</p>
+</body>
+</html>

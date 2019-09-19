@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap&subset=korean" rel="stylesheet">
+    <style>
+        /*
+            구글 웹폰트 사용하는 방법
+
+            https://fonts.google.com/ 접속 -> language : Korean -> +버튼을 클릭하여 글꼴 선택 -> 
+            ->아래 검은색 탭바(Family Selected) 클릭 -> Customize클릭 -> 필요한 스타일 체크 -> standard or import 중
+            코드를 복사함 -> HTML 에 붙여넣기 -> 밑에 CSS 코드를 font-family에 넣어 사용하기
+        */
+        p{
+            /* cursive : 손으로 쓴 것 같은 필기계열의 글꼴*/
+            font-family: "Cute Font", cursive;
+            font-size: 50px;
+            /* font-weight는 글씨의 굵기 정도를 나타냄 */
+            font-weight: 10;
+        }
+        /*
+            인터넷 익스플로러(IE)에서 구글 웹폰트 사용하는 방법
+            IE는 woff2포맷이 지원하지 않아서 발생하는 문제이므로 IE가 지원하는 woff형식의 글꼴을 사용하면 해결됨
+            woff형식의 글꼴을 다운받아서 업로드해서 사용함
+            https://google-webfonts-helper.herokuapp.com/fonts/nanum-gothic?subsets=latin
+            에 접속해서 다운로드하려는 글꼴을 선택하고 korean선택 필요한style선택하고 글꼴을 다운로드함 하고
+            link식으로 가져와서 사용하면됨
+        */
+    </style>
+</head>
+<body>
+    <p>구글 글꼴 테스트입니다.</p>
+</body>
+</html>

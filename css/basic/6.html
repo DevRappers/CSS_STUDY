@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            가상요소
+            - 가상 요소는 요소의 특정 부분을 선택함
+            - 가상 클래스는 콜론을 한 개(:), 가상 요소는 콜론을 두 개(::)씀. 하지만 콜론을 한개(:)만 써도 대부분
+              브라우저에서 제대로 작동함
+
+            ::first-line : 요소의 첫번째 줄을 선택함
+
+            ::before : 요소의 앞을 선택함 /content는 앞에 단어를 넣고 색상을 바꾸라는 뜻의 예시
+
+            ::after  : 요소의 뒤를 선택함 
+
+            ::selection : 마우스 드래그 등으로 선택한 텍스트를 선택함 
+        */
+        p::first-line{
+            color:red;
+        }
+        p::before{
+            content:"start";
+            color:blue;
+        }
+        p::after{
+            content:"end";
+            color:purple;
+        }
+
+        p::selection{
+            color:seagreen;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        안녕하세요.<br>
+        이재준입니다.
+    </p>
+</body>
+</html>
