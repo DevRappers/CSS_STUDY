@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            transform/scale : 2D확대 또는 축소하기
+
+            문법 
+            transform:scale(2.0)
+            가로와 세로 모두 2배 확대함
+            transform:scale(2.0 1.5)
+            가로로 2배, 세로로 1.5배 확대함
+            transform:scaleX(2.0)
+            가로로 2배
+            transform:scaleY(2.0)
+            세로로 2배
+        */
+        .jb{
+            width: 100px;
+            height: 100px;
+            margin: 60px auto;
+            background-color:orange;
+            transition: all ease 1s;
+        }
+
+        .jb:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+        <div class="jb"></div>
+</body>
+</html>

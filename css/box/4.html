@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            border : 테두리 만드는 속성
+            기본값: medium, none, color / 상속 : no/ 애니메이션 : yes
+
+            문법
+            border: border-width border-style border-color | initial | inherit
+            border-width : 선의 두께를 정함 기본값은 medium 
+            border-style : 선의 모 양을 정함. 기본값은 none
+            border-color : 선의 색을 정함. 기본값은 꾸미려는 요소의 색
+            initial      : 기본값으로 설정
+            inherit      : 부모 요소의 속성값을 상속받음.
+
+            border-width : medium | thick | thin | length | initial | inherit
+            border-style : dashed | dotted | double | groove | hidden | inset | none | outset | ridge | solid | initial | inherit
+            
+        */
+        div {
+            margin: 10px 0px;
+            text-align: center;
+            font-family: Consolas, monospace;
+            font-style: italic;
+            font-size: 13px;
+        }
+
+        .a {
+            border: 4px dashed #bcbcbc;
+        }
+
+        .b {
+            border: thick dotted #f44336;
+        }
+
+        .c {
+            border: 5pt groove #3f51b5;
+        }
+
+        .d {
+            border: 0.4em inset #009688;
+        }
+
+        .e {
+            border: 5px ridge #ff5722;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <p>border: 4px dashed #bcbcbc;</p>
+    </div>
+    <div class="b">
+        <p>border: thick dotted #f44336;</p>
+    </div>
+    <div class="c">
+        <p>border: 5pt groove #3f51b5;</p>
+    </div>
+    <div class="d">
+        <p>border: 0.4em inset #009688;</p>
+    </div>
+    <div class="e">
+        <p>border: 5px ridge #ff5722;</p>
+    </div>
+</body>
+
+</html>

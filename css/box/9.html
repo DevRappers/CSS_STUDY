@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            redial-gradient : 원형 그라데이션 효과를 만들 수 있음 
+
+            문법
+            radial-gradient( shape size at position, color1, color2 ,... , color3)
+            shape : 원 모양인지 타원 모양인지 정함
+            size  : 크기를 정함
+            position : 중심의 위치를 정함
+            color : 색을 정함
+        */
+        div.jb {
+            margin: 0px auto;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(yellow, red, brown);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jb"></div>
+</body>
+
+</html>

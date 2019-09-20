@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            반응형 웹디자인 
+            웹사이트의 레이아웃을 만들 때 방문자가 사용하는 모니터의 화면 해상도를 고려해야 한다. 너무
+            가로폭을 만들면 작은 해상도의 모니터로 접속했을 때 가로 스크롤이 생겨 컨텐츠를 보는 게 불편하기 때문
+
+            이러한 반응형 웹디자인을 할 수 있게 해주는 것이 @media 이다. 예를들어
+            @media (max-width: 768px) {
+                body {color: red;}
+            }
+            와 같이 하면 웹브라우저의 가로 해상도가 768px 이하일 때 글자색을 빨간색으로 바꿈 
+            모바일 기기의 해상도를 고려하여 적절히 CSS를 수정하거나 추가하는 것이 가능함.
+
+            주의할점은 가로폭 조정을 위해서 HTML문서의 head태그 사이에 다음의 코드를 넣어야함
+            <meta name="viewport" content="width=device-width, initial-scale=1"
+
+            모바일 우선 VS 데스크톱 우선
+            작은 가로폭부터 큰 가로폭 순서로 만드는 것을 모바일 우선(Mobile First), 큰 가로폭부터 작은 가로폭 순서로 만드는 것을 데스크톱
+            우선(Desktop First)라고 함
+
+            모바일 우선
+            작은 가로폭부터 큰 가로폭 순서로 만들고 min-width를 이용한다.
+            @media (min-width: 768px){
+
+            }
+            @media (min-width: 1024px){
+
+            }
+
+            데스크톱 우선
+            큰 가로폭부터 작은 가로폭 순서로 만들고, max-width를 이용함
+            @media (max-width: 1023px) {
+
+            }
+            @media (max-width: 767){
+                
+            }
+        */
+    </style>
+</head>
+<body>
+
+</body>
+</html>

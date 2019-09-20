@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+        여백에는 안쪽여백과 바깥여백이 있음. 안쪽 여백은 padding 바깥여백은 margin 속성으로 정함.
+        문법
+        padding: xx yy zz ww;
+        margin : xx yy zz ww;
+        순서대로 위 오른쪽 아래 왼쪽
+
+        속성은 한가지만 사용해도 됨 : 예) padding : 10px; 하면 순서대로 위쪽 padding이 적용됨.
+        
+        위 오른쪽 아래 왼쪽 중 하나에만 값을 부여하고 싶다면 다음과 같이 방향이 붙은 속성을 사용하면 됨.
+        padding-top: xx;
+        padding-right: xx;
+        padding-bottom: xx;
+        padding-left : xx;
+        margin-top:xx;
+        ~~~~~~
+
+        바깥여백(Margin)의 특징
+        - margin은 padding과 비교했을 때 두가지 특징이 있음. 
+        1. 음수 가능 : 첫번째 특지은 속성값으로 음수를 사용할 수 있다는 것 
+        2. 가운데 정렬 기능 : 속성값을 auto로 사용할 수 있다는 특징을 가지고 있음 auto를 사용하면 요소 가운데로 정렬할 수 있다.
+        */
+        div{
+            border: 1px solid #333333;
+        }
+
+        div.ma{
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.pad{
+            padding: 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    나는 일반 박스 모델이야. 아무스타일도 없어.
+</div>
+<div class="ma">
+    나는 margin이 적용된 박스 모델이야. 바깥쪽 여백이 조금 다를거야.
+</div>
+<div class="pad">
+    나는 padding이 적용된 박스 모델이야. 안쪽 여백이 조금 다를거야.
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            박스 커졌다 작아졌다 하는 애니메이션 만들기
+
+            코드의미
+            @keyframes
+            어떤 모양에서 어떤 모양으로 바꿀지 정함
+            
+            animation-name : 어떤 keyframes을 사용할지 정함
+
+            animation-duration : 애니메이션 총 시간을 정함
+
+            animation-timing-function : 애니메이션 진행 속도를 정함
+
+            animation-delay : 애니메이션을 시작하기 전에 대기하는 시간을 정함
+
+            animation-iteration-count : 애니메이션 반복 횟수를 정함
+
+            animation-direction : 애니메이션 진행방향임
+
+            animation-fill-mode : 애니메이션을 마친 후 어떤 상태로 만들지 정함
+
+            animation-play-state : 애니메이션을 진행할지 멈출지 정함
+        */
+        @keyframes big {
+            from {
+                width: 20px;
+                height: 20px;
+            }
+
+            to {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        div#jb {
+            margin: 30px auto;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            animation-name: big;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: 4;
+            animation-direction: alternate;
+            animation-fill-mode: none;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="jb"></div>
+</body>
+
+</html>

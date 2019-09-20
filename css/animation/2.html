@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            transform/rotate : 2D회전시키기
+
+            문법
+            transform: rotate(angle)
+            angle에는 각의 크기를 입력 
+
+            마우스를 올렸을 때 회전함. transition 속성으로 회전
+            deg는 각도
+        */
+        .jb{
+            width: 100px;
+            height: 100px;
+            margin: 60px auto;
+            background-color: orange;
+            /*transition 은 애니메이션의 속도를 지정함*/
+            transition: all ease 1s;
+        }
+
+        .jb:hover{
+            transform:rotate(360deg);
+        }
+
+
+    </style>
+</head>
+<body>
+		<div class="jb"></div>
+</body>
+</html>

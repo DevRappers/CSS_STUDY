@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            체크박스 꾸미는 방법
+            연결된 라벨을 만들고 꾸밈 
+        */
+        input[id="cb1"] + label {
+            display: inline-block;
+            width:20px;
+            height: 20px;
+            border: 2px solid #bcbcbc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <h3>Checkbox</h3>
+        <input type="checkbox" id="cb1">
+        <label for="cb1"></label>
+</body>
+</html>

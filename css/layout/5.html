@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 교본</title>
+    <style>
+        /*
+            포지션
+            엘리먼트가 화면에 어디에 위치할 것인가
+            - 엘리먼트의 위치를 지정하는 4가지 방법
+            static / relative / absolute / fixed
+
+            static : 일반적인값 
+            relative : 별도의 프로퍼티를 지정하지 않는 이상 static과 동일하게 동작하지만
+            상대 위치가 지정된 엘리먼트에 top이나 right, bottom, left를 지정하면 기본 위치와 다르게 위치가
+            조정됨. 다른 콘텐츠는 해당 엘리먼트에서 남긴 공백에 맞춰 들어가게끔 조정되지 않을 것임.
+            fixed : 고정 엘리먼트는 뷰포트에 상대적으로 위치가 지정되는데 이는 페이지가 스크롤되더라도 늘 같은 곳에 
+            위치한다는 뜻임 화면상의 어느 위치에 계속 고정시켜놔서 스크롤을 움직여도 그위치에 고정되도록할때 fixed를 사용함.
+            absolute : 가장 다루기 까다로운 위치 지정 값 상대적으로 위치가 지정되는 것이 아닌 가장 가까운 곳에 위치한 조상
+            엘리먼트에 상대적으로 위치가 지정된다는 점을 제외하면 fixed와 비슷하게동작함 
+            페이지 스크롤에 따라 움직임 조상이 없으면  부모위치에 안에서 지정되는 것
+            div안에 내용을 지정할때 같을때 좋음
+        */
+        #parent, #other, #grand{
+            border:5px solid tomato;
+        }
+        #grand{
+            position: relative;
+        }
+        #me{
+            background-color: black;
+            color:white;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+        <div id="other">other</div>
+        <div id="grand">
+           grand
+            <div id="parent">
+               parent
+               <div id="me">me</div>
+            </div>
+        </div>
+</body>
+</html>
